@@ -5,7 +5,7 @@ import { Fade } from "react-awesome-reveal";
 
 const Hero = () => {
   return (
-    <div className="border-b border-neutral-900 pb-4 lg:mb-35">
+    <div className="border-b border-neutral-900 pb-20 lg:mb-35">
       <div className="flex flex-wrap">
         <div className="w-full lg:w-1/2">
           <div className="flex flex-col items-center lg:items-start">
@@ -33,7 +33,7 @@ const Hero = () => {
                 </a>
 
                 <a
-                  href="https://your-resume-link.com"
+                  href=""
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block p-[1px] rounded-lg bg-gradient-to-r from-lime-300 to-green-500"

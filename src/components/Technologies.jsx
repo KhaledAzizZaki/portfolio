@@ -23,7 +23,7 @@ const iconVariants = (duration) => ({
 const Technologies = () => {
   return (
     <div className="border-b border-neutral-800 pb-34">
-      <Fade direction="down" duration={1000} triggerOnce>
+      <Fade direction="up" duration={1000} triggerOnce>
         <h1 className="my-20 text-center text-4xl">Technologies</h1>
       </Fade>
       <Fade direction="left" duration={2000} triggerOnce>

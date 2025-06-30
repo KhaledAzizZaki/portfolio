@@ -49,14 +49,14 @@ const Contact = () => {
 
   return (
     <div id="contact" className="py-20 px-6 max-w-7xl mx-auto text-white">
-      <Fade direction="down" duration={1000} triggerOnce>
+      <Fade direction="up" duration={1000} triggerOnce>
         <h1 className="mb-20 text-center text-4xl">
           Contact <span className="text-neutral-500">Me</span>
         </h1>
       </Fade>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
         {/* Left: Contact Form */}
-        <Fade direction="left" duration={1000} triggerOnce>
+        <Fade direction="left" triggerOnce delay={500}>
           <div className="bg-[#1A1A1A] p-10 rounded-xl">
             <h2 className="text-3xl font-semibold text-green-400 mb-2">
               Let's work together
@@ -127,7 +127,7 @@ const Contact = () => {
         {/* Right: Contact Info */}
 
         <div className="flex flex-col justify-center space-y-6 px-6">
-          <Fade direction="right" duration={1000} triggerOnce>
+          <Fade direction="right" triggerOnce delay={500}>
             <div className="flex items-center gap-4">
               <FaPhoneAlt className="text-green-400 text-6xl mt-1 bg-[#1A1A1A] p-4 rounded-lg" />
               <IoLogoWhatsapp className="text-green-400 text-6xl mt-1 bg-[#1A1A1A] p-4 rounded-lg" />

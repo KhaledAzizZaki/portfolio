@@ -7,7 +7,7 @@ import { Fade } from "react-awesome-reveal";
 const Projects = () => {
   return (
     <div className="border-b border-neutral-900 pb-4">
-      <Fade direction="down" duration={1000} triggerOnce>
+      <Fade direction="up" duration={1000} triggerOnce>
         <h1 className="my-20 text-center text-4xl">Projects</h1>
       </Fade>
       <div>
@@ -36,7 +36,7 @@ const Projects = () => {
                   {data.technologies.map((tech, index) => (
                     <span
                       key={index}
-                      className="mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-green-800"
+                      className="mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-green-700"
                     >
                       {tech}
                     </span>

@@ -48,7 +48,10 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className="py-20 px-6 max-w-7xl mx-auto text-white">
+    <div
+      id="contact"
+      className="py-20 px-3 sm:px-6 max-w-7xl mx-auto text-white"
+    >
       <Fade direction="up" duration={1000} triggerOnce>
         <h1 className="mb-20 text-center text-4xl">
           Contact <span className="text-neutral-500">Me</span>
@@ -57,7 +60,7 @@ const Contact = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
         {/* Left: Contact Form */}
         <Fade direction="left" triggerOnce delay={500}>
-          <div className="bg-[#1A1A1A] p-10 rounded-xl">
+          <div className="bg-[#1A1A1A] sm:p-10 p-7 rounded-xl">
             <h2 className="text-3xl font-semibold text-green-400 mb-2">
               Let's work together
             </h2>
@@ -68,36 +71,36 @@ const Contact = () => {
             </p>
 
             <form ref={form} onSubmit={sendEmail} className="space-y-4">
-              <div className="flex gap-4">
+              <div className="flex flex-col gap-4 sm:flex-row">
                 <input
                   type="text"
                   name="first_name"
                   placeholder="Firstname"
                   required
-                  className="w-1/2 p-3 bg-[#121212] rounded-md outline-none text-sm"
+                  className="w-full sm:w-1/2 p-3 bg-[#121212] rounded-md outline-none text-sm"
                 />
                 <input
                   type="text"
                   name="last_name"
                   placeholder="Lastname"
                   required
-                  className="w-1/2 p-3 bg-[#121212] rounded-md outline-none text-sm"
+                  className="w-full sm:w-1/2 p-3 bg-[#121212] rounded-md outline-none text-sm"
                 />
               </div>
-              <div className="flex gap-4">
+              <div className="flex flex-col gap-4 sm:flex-row">
                 <input
                   type="email"
                   name="user_email"
                   placeholder="Email address"
                   required
-                  className="w-1/2 p-3 bg-[#121212] rounded-md outline-none text-sm"
+                  className="w-full sm:w-1/2 p-3 bg-[#121212] rounded-md outline-none text-sm"
                 />
                 <input
                   type="tel"
                   name="phone"
                   placeholder="Phone number"
                   required
-                  className="w-1/2 p-3 bg-[#121212] rounded-md outline-none text-sm"
+                  className="w-full sm:w-1/2 p-3 bg-[#121212] rounded-md outline-none text-sm"
                 />
               </div>
               <input
@@ -128,22 +131,24 @@ const Contact = () => {
 
         <div className="flex flex-col justify-center space-y-6 px-6">
           <Fade direction="right" triggerOnce delay={500}>
-            <div className="flex items-center gap-4">
-              <FaPhoneAlt className="text-green-400 text-6xl mt-1 bg-[#1A1A1A] p-4 rounded-lg" />
-              <IoLogoWhatsapp className="text-green-400 text-6xl mt-1 bg-[#1A1A1A] p-4 rounded-lg" />
+            <div className="sm:flex items-center gap-4 space-y-3">
+              <div className="flex gap-4">
+                <FaPhoneAlt className="text-green-400 text-6xl mt-1 bg-[#1A1A1A] p-4 rounded-lg" />
+                <IoLogoWhatsapp className="text-green-400 text-6xl mt-1 bg-[#1A1A1A] p-4 rounded-lg" />
+              </div>
               <div>
                 <p className="text-sm text-gray-400">Phone</p>
                 <p className="text-base">+880 171 170 6800</p>
               </div>
             </div>
-            <div className="flex items-center gap-4">
+            <div className="sm:flex space-y-3 items-center gap-4">
               <FaEnvelope className="text-green-400 text-6xl mt-1 bg-[#1A1A1A] p-4 rounded-lg" />
               <div>
                 <p className="text-sm text-gray-400">Email</p>
                 <p className="text-base">khaledazizzaki@gmail.com</p>
               </div>
             </div>
-            <div className="flex items-center gap-4">
+            <div className="sm:flex space-y-3 items-center gap-4">
               <FaMapMarkerAlt className="text-green-400 text-6xl mt-1 bg-[#1A1A1A] p-4 rounded-lg" />
               <div>
                 <p className="text-sm text-gray-400">Address</p>

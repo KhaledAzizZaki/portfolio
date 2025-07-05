@@ -33,7 +33,7 @@ const Hero = () => {
                 </a>
 
                 <a
-                  href=""
+                  href="https://drive.google.com/file/d/1zzz84d4kU7VYDwAuqggZn4hcKb9RrFLA/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block p-[1px] rounded-lg bg-gradient-to-r from-lime-300 to-green-500"
